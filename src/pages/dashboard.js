@@ -41,7 +41,7 @@ export default function Dashboard() {
         console.log(requestOptions)
         fetch('http://localhost:1337/api/applicantlists/' + requestOptions)
             .then(response => response.json())
-            .then(data => this.setState("1"));
+            .then(data => setState("1"));
 
 
     }
@@ -53,7 +53,7 @@ export default function Dashboard() {
         console.log(requestOptions)
         fetch('http://localhost:1337/api/applicantlists/' + requestOptions)
             .then(response => response.json())
-            .then(data => this.setState("1"));
+            .then(data => setState("1"));
 
 
     }
@@ -62,13 +62,13 @@ export default function Dashboard() {
         Applicants();
         open();
     }, [])
-    /*
+    
 
     if (typeof (Applicant.id) === "undefinsed") {
         const url = "/login";
         return <Navigate to={url} />;
     }
-    */
+    
 
 
     const addjob = async () => {
